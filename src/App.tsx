@@ -1,13 +1,7 @@
-import { useQuery } from "@tanstack/react-query";
+
 
 function App() {
 
- const {}= useQuery({
-  queryKey:["users"],
-  queryFn:async()=>{
-    const response = await axios
-  }
- })
 
   return (
     <>
