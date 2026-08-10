@@ -1,15 +1,23 @@
-
+import { useQuery } from "@tanstack/react-query";
 
 function App() {
 
+ const {}= useQuery({
+  queryKey:["users"],
+  queryFn:async()=>{
+    const response = await axios
+  }
+ })
 
   return (
     <>
-      <h1 className="text-3xl font-bold bg-amber-900 underline">
-    Hello world!
-  </h1>
+      <h1>
+        Hello world!
+      </h1>
+
+  
     </>
-  )
+  );
 }
 
-export default App
+export default App;
